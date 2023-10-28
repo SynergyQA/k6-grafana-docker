@@ -1,0 +1,9 @@
+https://www-appsteam42.squaretrade.com/api/claim-lifecycle/v2/claims/claim_appsteam42_014783923135
+https://svc-1.appsteam42.squaretrade.com:11600/api/claim-lifecycle/v2/claims/claim_appsteam42_014783923135
+
+
+docker run -p 8086:8086 influxdb:latest
+
+
+
+docker run --rm -it -e GOOS=darwin grafana/xk6 build v0.43.1 --with github.com/mostafa/xk6-kafka@v0.17.0 --with github.com/grafana/xk6-output-influxdb@v0.3.0
